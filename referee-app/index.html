@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乒乓球裁判员管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="listView">
+            <h1>中国乒乓球裁判员名录</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="输入裁判员姓名进行筛选...">
+            </div>
+            <div id="refereeList" class="list-container">
+                <p class="loading">正在加载数据...</p>
+            </div>
+        </div>
+
+        <div id="detailView" class="hidden">
+            <button id="backButton">← 返回列表</button>
+            <div id="refereeDetail">
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
